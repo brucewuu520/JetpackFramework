@@ -45,7 +45,4 @@ dependencies {
     }
     annotationProcessor "com.github.bumptech.glide:compiler:${glide_version}"
     api project(':baseui')
-
-    // optional - Test helpers for LiveData
-    testImplementation "androidx.arch.core:core-testing:$lifecycle_version"
 }
