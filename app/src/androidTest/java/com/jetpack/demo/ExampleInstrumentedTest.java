@@ -1,4 +1,4 @@
-package com.jetpack;
+package com.jetpack.demo;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.jetpack.test", appContext.getPackageName());
+        assertEquals("com.jetpack.demo", appContext.getPackageName());
     }
 }

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><!--<com.qmuiteam.qmui.widget.QMUIWindowInsetLayout -->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:fitsSystemWindows="true"-->
+<!--        android:orientation="vertical">-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/app_window_background"
+    android:orientation="vertical">
+
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout
+        android:id="@+id/mTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="?attr/colorPrimary"
+        android:layout_marginTop="200dp"
+        android:text="Activity Second" />
+
+</LinearLayout><!--    </LinearLayout>-->
+
+    <!--</com.qmuiteam.qmui.widget.QMUIWindowInsetLayout>-->
