@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- APP主题色（默认蓝色）-->
+    <color name="app_primary_color">#00A8E1</color>
+    <!-- windowBackground颜色（默认浅灰色）-->
+    <color name="app_window_background">#F2F2F2</color>
+    <!-- 布局内容背景颜色（默认白色）-->
+    <color name="app_content_bg_color">#FFFFFF</color>
+    <!-- app primary color disabled-->
+    <color name="app_primary_color_disabled">#8000A8E1</color>
+    <!-- app primary color pressed-->
+    <color name="app_primary_color_pressed">#C000A8E1</color>
+
+    <!--透明度-->
+    <!--100% —FF-->
+    <!--95% — F2-->
+    <!--90% — E6-->
+    <!--85% — D9-->
+    <!--80% — CC-->
+    <!--75% — BF-->
+    <!--70% — B3-->
+    <!--65% — A6-->
+    <!--60% — 99-->
+    <!--55% — 8C-->
+    <!--50% — 80-->
+    <!--45% — 73-->
+    <!--40% — 66-->
+    <!--35% — 59-->
+    <!--30% — 4D-->
+    <!--25% — 40-->
+    <!--20% — 33-->
+    <!--15% — 26-->
+    <!--10% — 1A-->
+    <!--5% — 0D-->
+    <!--0% — 00-->
+    <!-- common -->
+    <color name="color_blue">#00A8E1</color>
+    <color name="color_blue_disabled">#8000A8E1</color>
+    <color name="color_blue_pressed">#C000A8E1</color>
+
+    <color name="main_white">#FFFFFF</color>
+    <color name="white_alpha_50">#80FFFFFF</color>
+    <color name="white_alpha_60">#99FFFFFF</color>
+    <color name="white_alpha_80">#CCFFFFFF</color>
+    <color name="main_black">#333333</color>
+    <color name="secondary_black">#666666</color>
+    <color name="black_alpha_40">#66111111</color>
+    <color name="black_alpha_50">#80111111</color>
+    <color name="black_alpha_60">#99111111</color>
+    <color name="black_alpha_20">#33111111</color>
+    <color name="main_gray">#888888</color>
+    <color name="secondary_gray">#999999</color>
+    <color name="main_red">#E92C1B</color>
+    <color name="main_green">#559E98</color>
+    <color name="secondary_green">#71C357</color>
+    <color name="second_green">#5AC998</color>
+    <color name="main_yellow">#FF9900</color>
+
+</resources>

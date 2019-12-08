@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.compile_sdk_version
+    buildToolsVersion rootProject.build_tools_version
+
+    defaultConfig {
+        minSdkVersion rootProject.min_sdk_version
+        targetSdkVersion rootProject.target_sdk_version
+        versionCode 1
+        versionName "1.0"
+
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    api "androidx.fragment:fragment:$fragment_version"
+    api "androidx.appcompat:appcompat:$appcompat_version"
+    api "com.google.android.material:material:${material_version}"
+    api "androidx.annotation:annotation:${annotation_version}"
+    api "androidx.vectordrawable:vectordrawable:${vectordrawable_version}"
+    api "androidx.collection:collection:${collection_version}"
+    api "androidx.constraintlayout:constraintlayout:${constraintlayout_version}"
+    api "androidx.recyclerview:recyclerview:${recyclerview_version}"
+    api "androidx.swiperefreshlayout:swiperefreshlayout:${swiperefreshlayout_version}"
+    api "androidx.viewpager2:viewpager2:${viewpager2_version}"
+    api "com.qmuiteam:qmui:${qmui_version}"
+    api "com.qmuiteam:arch:${qmui_version}"
+}
