@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Fragment销毁时从activity detach，从内存中完全销毁
+ * {@link androidx.viewpager2.widget.ViewPager2} fragment adapter
  */
 public class MyFragmentStateAdapter extends FragmentStateAdapter {
 

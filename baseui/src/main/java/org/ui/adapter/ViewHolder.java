@@ -1,10 +1,8 @@
 package org.ui.adapter;
 
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.collection.SparseArrayCompat;
@@ -36,24 +34,16 @@ public final class ViewHolder {
         return (V) view;
     }
 
-    public View findView(int viewId) {
+    public View getView(int viewId) {
         return findViewById(viewId);
     }
 
-    public AppCompatTextView findTextView(int viewId) {
+    public AppCompatTextView getText(int viewId) {
         return (AppCompatTextView) findViewById(viewId);
     }
 
-    public AppCompatImageView findImageView(int viewId) {
+    public AppCompatImageView getImage(int viewId) {
         return (AppCompatImageView) findViewById(viewId);
-    }
-
-    public AppCompatImageButton findImageButton(int viewId) {
-        return (AppCompatImageButton) findViewById(viewId);
-    }
-
-    public Button findButton(int viewId) {
-        return (Button) findViewById(viewId);
     }
 
     public void setBackground(int resId) {

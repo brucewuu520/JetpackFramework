@@ -44,5 +44,4 @@ dependencies {
         transitive = false
     }
     annotationProcessor "com.github.bumptech.glide:compiler:${glide_version}"
-    api project(':baseui')
 }

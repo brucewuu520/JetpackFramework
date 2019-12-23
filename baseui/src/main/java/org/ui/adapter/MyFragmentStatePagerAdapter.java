@@ -8,6 +8,9 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Fragment销毁时从activity detach，从内存中完全销毁
+ */
 public class MyFragmentStatePagerAdapter extends FragmentStatePagerAdapter {
 
     private final List<Fragment> mFragments = new ArrayList<>();

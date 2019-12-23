@@ -8,7 +8,6 @@ import androidx.annotation.Nullable;
  * @param <T> data泛型
  */
 public class ApiResult<T> {
-
     private int code;
     private String message;
     @Nullable

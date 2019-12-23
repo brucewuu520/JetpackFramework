@@ -2,31 +2,41 @@ package org.library.lifecycle;
 
 import androidx.lifecycle.MutableLiveData;
 
-import org.library.model.LoadingModel;
+class LoadingLiveData extends MutableLiveData<LoadingBean> {
 
-class LoadingLiveData extends MutableLiveData<LoadingModel> {
-
-    private LoadingModel loadingModel = new LoadingModel();
+    private LoadingBean loadingBean = new LoadingBean();
 
     public void showLoading() {
-        if (!loadingModel.isShowing()) {
-            loadingModel.setShowing(true);
-            postValue(loadingModel);
+        if (!loadingBean.isShowing()) {
+            loadingBean.setShowing(true);
+            loadingBean.setLoaded(false);
+            setValue(loadingBean);
         }
     }
 
     public void showLoading(String msg) {
-        if (!loadingModel.isShowing()) {
-            loadingModel.setShowing(true);
-            postValue(loadingModel);
+        if (!loadingBean.isShowing()) {
+            loadingBean.setShowing(true);
+            loadingBean.setMgs(msg);
+            loadingBean.setLoaded(false);
+            setValue(loadingBean);
         }
     }
 
     public void hideLoading() {
-        if (loadingModel.isShowing()) {
-            loadingModel.setShowing(false);
-            loadingModel.setMgs(null);
-            postValue(loadingModel);
+        if (loadingBean.isShowing()) {
+            loadingBean.setShowing(false);
+            loadingBean.setMgs(null);
+            loadingBean.setLoaded(false);
+            setValue(loadingBean);
         }
+    }
+
+    /**
+     * 加载更多完毕
+     */
+    public void loaded() {
+        loadingBean.setLoaded(true);
+        setValue(loadingBean);
     }
 }

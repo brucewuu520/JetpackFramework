@@ -7,11 +7,13 @@
     <string name="delete">删除</string>
     <string name="next">下一步</string>
 
+    <string name="ok">好的</string>
+    <string name="reject">残忍拒绝</string>
+    <string name="go_setting">去设置</string>
+    <string name="do_not">暂不</string>
     <string name="know">知道了</string>
     <string name="loading">加载中…</string>
     <string name="please_wait">请稍后…</string>
     <string name="retry">重试</string>
-
-    <string name="server_error">服务器崩溃了，请稍后再试</string>
-    <string name="timeout_error">网络连接超时，请检查您的手机是否联网</string>
+    <string name="load_end_tips">我也是有底线的 *_^</string>
 </resources>

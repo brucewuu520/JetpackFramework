@@ -20,13 +20,14 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 }
 
 dependencies {
+    api "androidx.activity:activity:$activity_version"
     api "androidx.fragment:fragment:$fragment_version"
     api "androidx.appcompat:appcompat:$appcompat_version"
     api "com.google.android.material:material:${material_version}"
@@ -39,4 +40,5 @@ dependencies {
     api "androidx.viewpager2:viewpager2:${viewpager2_version}"
     api "com.qmuiteam:qmui:${qmui_version}"
     api "com.qmuiteam:arch:${qmui_version}"
+    implementation project(':library')
 }

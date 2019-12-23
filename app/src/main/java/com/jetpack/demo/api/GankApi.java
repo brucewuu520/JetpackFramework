@@ -1,7 +1,7 @@
 package com.jetpack.demo.api;
 
-import com.jetpack.demo.model.Beauty;
-import com.jetpack.demo.model.Result;
+import com.jetpack.demo.bean.Beauty;
+import com.jetpack.demo.bean.Result;
 
 import java.util.List;
 

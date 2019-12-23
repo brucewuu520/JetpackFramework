@@ -6,15 +6,16 @@ import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.jetpack.demo.R;
-import com.jetpack.demo.model.Beauty;
+import com.jetpack.demo.bean.Beauty;
+import com.jetpack.demo.ui.about.AboutFragment;
 
-import org.library.fragment.SwipeBackFragment;
+import org.ui.fragment.SwipeBackFragment;
 import org.library.glide.GlideApp;
 import org.ui.adapter.RecyclerAdapter;
 import org.ui.adapter.RecyclerViewHolder;
@@ -29,7 +30,7 @@ public class MainFragment extends SwipeBackFragment<MainViewModel> {
 
     @Override
     protected void initViewModel() {
-        mViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
+        mViewModel = new ViewModelProvider(this).get(MainViewModel.class);
     }
 
     @Override
@@ -44,6 +45,11 @@ public class MainFragment extends SwipeBackFragment<MainViewModel> {
 
     @Override
     protected void showError(String error) {
+
+    }
+
+    @Override
+    protected void loadEnd() {
 
     }
 
@@ -64,8 +70,8 @@ public class MainFragment extends SwipeBackFragment<MainViewModel> {
 
             @Override
             protected void bindData(RecyclerViewHolder holder, int position, Beauty beauty) {
-                GlideApp.with(MainFragment.this).load(beauty.url).into(holder.findImageView(R.id.image));
-                holder.findTextView(R.id.tv_date).setText(beauty.desc);
+                GlideApp.with(MainFragment.this).load(beauty.url).into(holder.getImage(R.id.image));
+                holder.getText(R.id.tv_date).setText(beauty.desc);
             }
         };
         recyclerView.setAdapter(mAdapter);

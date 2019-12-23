@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
 
-import org.library.util.FastBlur;
+import org.library.util.BitmapUtils;
 
 import java.security.MessageDigest;
 
@@ -56,7 +56,7 @@ public class BlurTransformation extends BitmapTransformation {
         paint.setFlags(Paint.FILTER_BITMAP_FLAG);
         canvas.drawBitmap(toTransform, 0, 0, paint);
 
-        bitmap = FastBlur.blur(bitmap, radius);
+        bitmap = BitmapUtils.fastBlur(bitmap, radius);
 
         return bitmap;
     }

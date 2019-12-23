@@ -3,7 +3,7 @@ package com.jetpack.demo;
 import com.jetpack.demo.ui.main.MainFragment;
 import com.qmuiteam.qmui.arch.annotation.DefaultFirstFragment;
 
-import org.library.activity.BaseFragmentActivity;
+import org.ui.activity.BaseFragmentActivity;
 
 @DefaultFirstFragment(MainFragment.class)
 public class MainActivity extends BaseFragmentActivity {
